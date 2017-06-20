@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+   var birthdate = prompt("What's your birthday (format: 'Dec 25, 1900')?");
+   birthdate= new Date(birthdate)
+   var today = new Date();
+   var time = 24*60*60*1000;
+   var age = Math.round(Math.abs((birthdate.getTime() - today.getTime())/(time)));
+   alert ("Wow! You are " + (age) + " days old");
+ </script>
+</body>
+</html>
