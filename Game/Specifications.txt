@@ -1,0 +1,5 @@
+Specifications for Game 
+
+This will be a simple childs game. 
+
+I think I will be going with Rock Paper Sissors played against a computer or an opponant 
