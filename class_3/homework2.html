@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+      var number = prompt("Give me a number");
+      var time = new Date();
+      time = time.getHours() % 12;
+      echo ("It is " + time);
+      
+      time  = parseInt(time) + parseInt(number);
+      if (time + number > 12)
+      {
+        time %= 12;
+      }
+      echo ("It will be " + time + " after " + number + " hours have passed");
+ </script>
+</body>
+</html>
