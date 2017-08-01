@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+ 
+  echo("madam: " + isPalindrome("madam"));
+  echo("person: " + isPalindrome("person"));
+  echo("12321: " + isPalindrome("12321"));
+  echo("823764: " + isPalindrome("823764"));
+  
+function isPalindrome(word){
+	let len=word.length;
+	for (let i=0; i<len/2; i++){
+		let c1 = word.charAt(i);
+		let c2 = word.charAt(len-i-1);
+		
+			if( c1 != c2){
+				return false;
+			}
+	}
+	return true;
+	}
+ </script>
+</body>
+</html>
+
