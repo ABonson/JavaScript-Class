@@ -91,8 +91,10 @@
       (function () {
       let listen= document.querySelector("#grandparent");
 	  let myListen = document.querySelector("#parent");
-	  listen.addEventListener("click", function(){ alert("Hello World! Im grsndpa"); }, true);
-	  myListen.addEventListener("click", function(){ alert("Goodbye World! i am a dad."); });
+	  let otherListen = document.querySelector("#child");
+	  listen.addEventListener("click", function(){ alert("Hello World! Im grandpa"); }, true);
+	  myListen.addEventListener("click", function(){ alert("Goodbye World! I am a dad"); }, true);
+	  otherListen.addEventListener("click", function(){ alert("I am the crying baby"); });
       })();
     </script>
   </body>
