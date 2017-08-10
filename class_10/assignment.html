@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+
+
+String.prototype.capitalize = function(){
+		return this.charAt(0).toUpperCase() + this.slice(1);
+	};
+
+	let word = "lorem ipsum";
+	alert ("This is capitolized - " + word.capitalize());
+
+ </script>
+</body>
+</html>
